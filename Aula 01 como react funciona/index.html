@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo sem React com parâmetros</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Seu script JavaScript -->
+  <script>
+    // Função para criar um elemento <div> com o conteúdo especificado
+    function criarElemento(conteudo) {
+      var div = document.createElement('div');
+      div.textContent = conteudo;
+      return div;
+    }
+
+    // Obtém a div com id "root"
+    var rootDiv = document.getElementById('root');
+
+    // Cria o elemento com o conteúdo especificado e adiciona à div com id "root"
+    rootDiv.appendChild(criarElemento('olá mundo'));
+  </script>
+</body>
+
+</html>
